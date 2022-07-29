@@ -81,6 +81,7 @@ htlm, body{
 }
 .stat-copy{
   color: #949494;
+  padding: 0 1em;
 }
 .card{
   position: relative;
@@ -140,9 +141,9 @@ htlm, body{
   background: rgb(126, 51, 27);
   background:  linear-gradient(
   120deg,
-  rgba(126, 51, 27, 0.4) 0%,
+  rgba(70, 70, 70, 0.3) 0%,
   rgba(70, 70, 70, 0.3) 50%,
-  rgba(70, 70, 70, 0.3) 100%
+  rgba(102, 185, 162, 0.2) 100%
   );
   padding: 2em;
   display: flex;
@@ -150,4 +151,39 @@ htlm, body{
   align-items: center;
 
 }
+.card-col{
+  /* font-family: serif; */
+  font-weight: 300;
+  opacity: 0.7;
+  line-height: 1.8em;
+}
+.card-title{
+  font-size: 12px;
+
+}
+ /* moble view */
+ @media (max-width: 900px) {
+   
+   .nav-links{
+     display: none;
+   }
+   
+   .content{
+     flex-direction: column;
+   }
+ 
+ .col{
+   width: 100px;
+ }
+ .header{
+   font-size: 2em;
+ }
+ .card{
+   top: 0;
+   left: 0;
+ }
+ .card-balance{
+   top: 0;
+ }
+ }
 
